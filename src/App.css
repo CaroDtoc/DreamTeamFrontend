@@ -1,0 +1,19 @@
+.welcome-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+
+.welcome-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

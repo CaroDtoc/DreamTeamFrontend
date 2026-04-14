@@ -130,7 +130,7 @@ export default function Dashboard() {
             </svg>
           </button>
           <div className="navbar-brand">
-            <span className="brand-icon">🌿</span>
+            <span className="brand-icon"></span>
             <span className="brand-name">TontineAdmin</span>
           </div>
         </div>

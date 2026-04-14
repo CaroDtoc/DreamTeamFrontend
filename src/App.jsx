@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { PATHS } from "./constants/routes";
 import "./App.css";
 
 const App = () => {
@@ -15,7 +14,7 @@ const App = () => {
 
     // Redirige vers login après 3 secondes
     const redirectTimer = setTimeout(() => {
-      navigate(PATHS.LOGIN);
+    navigate("/login");
     }, 3000);
 
     return () => {

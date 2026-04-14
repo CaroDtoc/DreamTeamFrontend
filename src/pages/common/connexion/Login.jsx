@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
-  const [email, setEmail] = useState("");
+  const [email,    setEmail]    = useState("");
   const [password, setPassword] = useState("");
   const [remember, setRemember] = useState(false);
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [error,    setError]    = useState("");
+  const [loading,  setLoading]  = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -20,7 +20,7 @@ function Login() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      navigate("/admin/Dashboard");  
+      navigate("/admin/dashboard"); // ✅ d minuscule
     }, 1400);
   };
 
@@ -49,7 +49,7 @@ function Login() {
             <div className="input-wrap">
               <input
                 type="password"
-                placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
+                placeholder="••••••••"
                 value={password}
                 onChange={e => setPassword(e.target.value)}
               />
@@ -65,7 +65,7 @@ function Login() {
               />
               <a className="forgot">Se souvenir de moi ?</a>
             </label>
-            <a className="forgot">Mot de passe oublie ?</a>
+            <a className="forgot">Mot de passe oublié ?</a>
           </div>
 
           <button className="btn-login" type="submit" disabled={loading}>
@@ -77,7 +77,7 @@ function Login() {
 
         <div className="signup-row">
           Pas encore de compte ?{" "}
-          <a className="signup-link">Creer un compte</a>
+          <a className="signup-link">Créer un compte</a>
         </div>
       </div>
     </div>
